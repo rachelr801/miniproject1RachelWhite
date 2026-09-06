@@ -1,3 +1,7 @@
+# INF601 - Advanced Programming in Python
+# Rachel White
+# Mini Project 1
+
 import os
 import requests
 
@@ -25,6 +29,10 @@ class PracticeHubClient:
         return resp.json()
 
     # TODO (Mini Project 1): get_post, update_post, delete_post
+  def get_posts(self, post_id):
+    resp = requests.get(f"{self.base}/api/v1/posts/{post_id}", headers=self.headers)
+    resp.raise_for_status()
+    return resp.json()
 
 
 if __name__ == "__main__":
