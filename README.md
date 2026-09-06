@@ -12,7 +12,7 @@ API Client Practice to Get, Update, and Delete Post
 This program contains the REST API code to post, get, update, and delete posts from the class practice API website. It also return various error messages, depending on the issue encountered. The program uses an API token that the user must set before running the program using the instructions listed below under Dependencies.
 
 ## AI Usage
-I used Claude to do the initial push to GitHub because I wasn't sure how to accomplish that within Claude Code. I also used Claude to test whether the error messages printed correctly with the given scenarios.
+I used Claude to do the initial push to GitHub because I wasn't sure how to accomplish that within Claude Code. Claude provided formatting updates including correcting a few indent errors and adding a missing semicolon. I also used Claude to test whether the error messages printed correctly with the given scenarios.
  
 ## Getting Started
  
