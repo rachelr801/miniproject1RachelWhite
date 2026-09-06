@@ -34,6 +34,16 @@ class PracticeHubClient:
     resp.raise_for_status()
     return resp.json()
 
+    def update_post(self, post_id, title, body="", tags=None):
+      resp = requests.put(f"{self.base}/api/v1/posts/{post_id}", headers=self.headers, json={
+        "title": title,
+        "body": body,
+        "tags": tags or []
+      }
+                         )
+      resp.raise_for_status()
+      return resp.json()
+
 
 if __name__ == "__main__":
     if not TOKEN:
